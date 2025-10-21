@@ -20,15 +20,15 @@ Camera → YOLOv8 Detection → ESP32 Controller → Relay & Stepper Motor → D
 
 ---
 
-## Hardware Components
-- ESP32
-- 12V Diaphragm Pump
-- 12V 5A SMPS Power Supply
-- HW-028 Rain Sensor
-- 28BYJ-48 Stepper Motor + ULN2003 Driver
-- XL4015 Buck Converter
-- Relay Module
-- Camera Module (top-view capture)
+### 🧩 Hardware Components
+| Component | Description |
+|------------|-------------|
+| **ESP32** | Main microcontroller handling relay control and communication |
+| **Diaphragm Pump (12V)** | Used to spray pesticide selectively |
+| **12V 5A SMPS Power Supply** | Powers the pump and control system |
+| **HW-028 Rain Sensor** | Detects rainfall to pause spraying in wet conditions |
+| **28BYJ-48 Stepper Motor + ULN2003 Driver** | Controls directional movement of the spraying unit |
+| **XL4015 Buck Converter** | Steps down voltage for stable operation of electronic modules |
 
 ---
 
@@ -45,6 +45,13 @@ Camera → YOLOv8 Detection → ESP32 Controller → Relay & Stepper Motor → D
 - Custom dataset: **440 field images**
 - Model: **YOLOv8** (trained for Leaf Curl detection)
 
+### 🧠 YOLOv8 Model Development
+1. **Dataset Creation:** Captured real-world chili leaf images from field conditions.  
+2. **Annotation:** Used Roboflow to label diseased and healthy leaves.  
+3. **Model Training:** YOLOv8 model trained on the custom dataset for detecting leaf curl disease.  
+4. **Testing:** Evaluated performance on unseen images with high detection accuracy.  
+5. **Integration:** Deployed model output to control ESP32-based spraying unit.
+
 ---
 
 ## 📊 Model Performance
@@ -53,6 +60,11 @@ Camera → YOLOv8 Detection → ESP32 Controller → Relay & Stepper Motor → D
 - 🎯 mAP50: **75.2%**
 - Dataset: 440 real field images
 - Outcome: Reliable real-time detection and successful selective spraying in field tests
+
+---
+
+## 🎥 Prototype Demonstration
+📹 Watch Demo Video: https://youtu.be/Fit3X5Yvql0
 
 ---
 
