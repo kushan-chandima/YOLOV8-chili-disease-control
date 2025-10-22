@@ -65,7 +65,7 @@ Camera → YOLOv8 Detection → ESP32 Controller → Relay & Stepper Motor → D
 
 ## 🎥 Prototype Demonstration
 📹 Watch Demo Video: https://youtu.be/Fit3X5Yvql0
-
+<!--
 ---
 
 ## How to Run
@@ -79,3 +79,4 @@ pip install -r requirements.txt
 
 # Run detection
 python detect.py --source path_to_images_or_video
+-->
