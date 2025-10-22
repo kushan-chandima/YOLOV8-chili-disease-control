@@ -1,4 +1,4 @@
-# ai-yolov8-chili-disease-control
+# YOLOV8-chili-disease-control
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat-square)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-orange?style=flat-square)
