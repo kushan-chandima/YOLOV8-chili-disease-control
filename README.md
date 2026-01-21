@@ -1,4 +1,4 @@
-# YOLOv8-chili-disease-control.
+# Chili Disease Identification and Control by using YOLOv8
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=flat-square)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-orange?style=flat-square)
